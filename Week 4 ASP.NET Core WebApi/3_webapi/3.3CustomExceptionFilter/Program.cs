@@ -3,7 +3,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers(options =>
 {
-    options.Filters.Add<CustomExceptionFilter>(); // ✅ Register globally
+    options.Filters.Add<CustomExceptionFilter>();
 });
 
 builder.Services.AddEndpointsApiExplorer();
